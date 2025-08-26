@@ -1,4 +1,6 @@
 openai-agents
 python-dotenv
 langchain-openai
+langchain
 streamlit
+
