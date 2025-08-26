@@ -7,7 +7,7 @@ from langchain.prompts import PromptTemplate
 
 
 def generate_restaurant_name_and_items(cuisine):
-    llm = OpenAI(temperature=0.2, api_key=api_key)
+    llm = OpenAI(temperature=0.7, api_key=api_key)
     # name = llm.invoke("I want to open a restraunt for {} food. suggent me a only one fancy name for the same")
 
     promt_restaurant_template_name = PromptTemplate(
@@ -38,6 +38,7 @@ def generate_restaurant_name_and_items(cuisine):
 
 #if __name__ == '__main__':
 #    print(generate_restaurant_name_and_items('Italian'))
+
 
 
 
