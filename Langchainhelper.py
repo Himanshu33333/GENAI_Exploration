@@ -5,6 +5,8 @@ api_key = os.environ.get("OPEN_API_KEY")
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 
+print(api_key)
+
 
 def generate_restaurant_name_and_items(cuisine):
     llm = OpenAI(temperature=0.2, api_key=api_key)
@@ -38,6 +40,7 @@ def generate_restaurant_name_and_items(cuisine):
 
 #if __name__ == '__main__':
 #    print(generate_restaurant_name_and_items('Italian'))
+
 
 
 
